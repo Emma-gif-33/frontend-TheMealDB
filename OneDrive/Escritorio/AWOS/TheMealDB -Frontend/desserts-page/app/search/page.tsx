@@ -2,6 +2,8 @@ import { MealService } from '@/src/services/api';
 import RecipeCard from '@/src/components/mainPage/recipeCard';
 import Link from "next/link";
 
+export const dynamic = 'force-dynamic';
+
 export default async function SearchPage({ searchParams }: any) {
     const params = await searchParams;
     const type = params.type || 'name';

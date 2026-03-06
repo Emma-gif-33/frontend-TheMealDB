@@ -3,6 +3,8 @@ import RecipeCard from '@/src/components/mainPage/recipeCard';
 import { ApiResponse, RecipeSummary } from '@/src/models/models';
 import SearchBar from "@/app/search/searchBar";
 
+export const dynamic = 'force-dynamic';
+
 export default async function HomePage() {
   const response: ApiResponse<RecipeSummary[]> = await MealService.getAll();
   const recipes = response.data;
