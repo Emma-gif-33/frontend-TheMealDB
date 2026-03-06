@@ -8,7 +8,7 @@ interface Props {
 export default function RecipeCard({ recipe }: Props) {
     return (
         <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden">
-            {/* Imagen con efecto de zoom al hacer hover */}
+
             <div className="relative h-48 w-full overflow-hidden">
                 <img
                     src={recipe.image}
@@ -17,7 +17,6 @@ export default function RecipeCard({ recipe }: Props) {
                 />
             </div>
 
-            {/* Contenido de la tarjeta */}
             <div className="p-5">
                 <h3 className="text-lg font-bold text-gray-800 mb-3 line-clamp-1">
                     {recipe.name}
